@@ -48,3 +48,9 @@ exports.getLanguage = function() {
     return    cordova.exec(resolve, reject, 'TTS', 'getLanguage', []);
 //     });
 };
+
+exports.getLanguage2 = function() {
+     return new Promise(function (resolve, reject) {
+        cordova.exec(resolve, reject, 'TTS', 'getLanguage', []);
+     });
+};
