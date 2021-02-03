@@ -43,14 +43,14 @@ exports.openInstallTts = function() {
 };
 
 
-exports.getLanguage = function() {
+exports.getLanguagesB = function() {
 //     return new Promise(function (resolve, reject) {
-    return    cordova.exec(resolve, reject, 'TTS', 'getLanguage', []);
+    return    cordova.exec(resolve, reject, 'TTS', 'getLanguages', []);
 //     });
 };
 
-exports.getLanguage2 = function() {
+exports.getLanguages = function() {
      return new Promise(function (resolve, reject) {
-        cordova.exec(resolve, reject, 'TTS', 'getLanguage', []);
+        cordova.exec(resolve, reject, 'TTS', 'getLanguages', []);
      });
 };
