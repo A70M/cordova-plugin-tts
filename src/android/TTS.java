@@ -150,7 +150,7 @@ public class TTS extends CordovaPlugin implements OnInitListener {
     }
 
 
-    private void getLanguages(JSONArray args)
+    private Locale getLanguages(JSONArray args)
       throws JSONException, NullPointerException {
         return tts.getAvailableLanguages();
     }
